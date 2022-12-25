@@ -91,22 +91,54 @@
                       <div class="journal-txt">
                         <h3 class="resume-title">Presentation de l'entreprise</h3>
                       </div>
+                      <div class="text-black">
 
-                      <p class="mb-30"> Bsecure est un cabinet d’expertise en cybersécurité des applications et des infrastructures créées en 2009. Son activité est essentiellement basée sur de l’audit et la recherche de vulnérabilités informatiques. Elle intervient pour différents types d’audits :test d’intrusion, audit de code, audit des infrastructures, audit de cloud….
+                      <p class="text-black"> Bsecure est un cabinet d’expertise en cybersécurité des applications et des infrastructures créées en 2009. Son activité est essentiellement basée sur de l’audit et la recherche de vulnérabilités informatiques. Elle intervient pour différents types d’audits :test d’intrusion, audit de code, audit des infrastructures, audit de cloud….
                         La remédiation est un point fort de l’expertise afin de s’adapter au système propre à chaque entreprise pour détecter les risques. Bsecure va corriger les vulnérabilités et éviter l’exploitation possible d’autres failles.
                         Bsecure est une entreprise qui travaille essentiellement à distance mais qui possède un bureau dans le 13ème arrondissement.
                         Pour ma part je suis intervenu sur la partie développement de l’entreprise puisque c’était le but du stage.
                       </p>
+                      <ul>
+                        <li>Nom : Bsecure</li>
+                        <li>Adresse: 61 avenue secretan</li>
+                        <li>Forme juridique:SARL </li>
+                        <li>Taille: 20 salariés</li>
+                        <li>secteur d'activité: conseil en systèmes et logiciels informatiques</li>
+                        <li>service d'intervention: MSSP</li>
+
+                      </ul>
+                      </div>
                       <h3 class="resume-title">Presentation du projet</h3>
-                      <p class="mb-30">L’entreprise développe des fonctions lambda sur les serveurs d’AWS afin de protéger et d’assurer la sécurité des sites de leurs clients. Mon travail consiste donc à développer une fonction lambda qui dans un premier temps vérifie qu’un site répond avec un temps satisfaisant puis par la suite renvoie des données de l’API. Le langage utilisé est le nodeJS.</p>
-                      <blockquote>If you are still looking for that one person who will change your life, take a look in the mirror.</blockquote>
-                      <p class="mb-30">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-                        Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-                        1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
-                        "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                      <p class="text-black">L’entreprise développe des fonctions lambda sur les serveurs d’AWS afin de protéger et d’assurer la sécurité des sites de leurs clients. Mon travail consiste donc à développer une fonction lambda qui dans un premier temps vérifie qu’un site répond avec un temps satisfaisant puis par la suite renvoie des données de l’API. Le langage utilisé est le nodeJS.</p>
+                      <div class="text-black">
+                      <ul>
+                        <li>Première mission:</li>
+                        <p class="text-black">cibler les noms de domaines exploités par bsecure à travers l’API :
+                          nous avons commencé à travailler avec l’API que l’entreprise utilise afin de récupérer les données de l’API dans notre fonction Lambda.
+                          En entrant les données (headers, path, content-type) dans la variable options on parcourt les données que renvoie l’API et on envoie uniquement les noms de domaines des targets. (Par le path targets)
+                        </p>
+                        <img src="assets/img/fonction.png" alt="">
+                        <li>Deuxième mission</li>
+                        <p class="text-black">
+                          lister les scan-config en fonction de leur nom (Discovery ou full) :
+                          Discovery signifie que le scan est en découverte car le robot cherche les vulnérabilités présentes.
+                          Full signifie que le scan est fonctionnel et qu’il a détecté des attaques potentiels (attack-templates).
+                          La première fonction renvoie les app_id dans deux tableaux (Discovery et full).
+                          La seconde renvoie les noms de ces derniers qu’elle va chercher dans les apps. (Le path)
+                          Il suffit de changer le chemin et d’aller chercher uniquement les noms de domaine dans le tableau des données de l’API.
+                          A la fin on appelle les deux fonctions, l’une à la suite de l’autre afin de récupérer les scans (full et Discovery) renvoyés par les ID de la première fonction pour les transformer en noms de domaine.
+                          Si on test la fonction on retrouve dans les logs les différents noms en fonction de leur catégorie (Discovery ou full)
+                          <img src="assets/img/result.png" class="img-fluid" >
+
+
+
+                        </p>
+                      </ul>
                     </div>
                   </div>
                 </div>
+                </div>
+              </div>
 
 
 
@@ -151,6 +183,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+              </div>
 </body>
 
 </html>

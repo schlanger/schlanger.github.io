@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Folio Bootstrap Template - Blog Single</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Folio - v4.9.1
+    * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <!-- Uncomment below if you prefer to use an text logo -->
+        <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto " href="#hero">Présentation</a></li>
+                <li><a class="nav-link scrollto" href="#about">Description</a></li>
+                <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link active  scrollto" href="#journal">Blog</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+
+<main id="main">
+
+    <!-- ======= Blog Single ======= -->
+    <div class="main-content paddsection">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="container-main single-main">
+                            <div class="col-md-12">
+                                <div class="block-main mb-30">
+                                    <img src="assets/img/Accor2.png" class="img-responsive" alt="reviews2">
+                                    <div class="content-main single-post padDiv">
+                                        <div class="journal-txt">
+                                            <h3 class="resume-title">Presentation de l'entreprise</h3>
+                                        </div>
+                                        <div class="text-black">
+
+                                            <p class="text-black"> Bsecure est un cabinet d’expertise en cybersécurité des applications et des infrastructures créées en 2009. Son activité est essentiellement basée sur de l’audit et la recherche de vulnérabilités informatiques. Elle intervient pour différents types d’audits :test d’intrusion, audit de code, audit des infrastructures, audit de cloud….
+                                                La remédiation est un point fort de l’expertise afin de s’adapter au système propre à chaque entreprise pour détecter les risques. Bsecure va corriger les vulnérabilités et éviter l’exploitation possible d’autres failles.
+                                                Bsecure est une entreprise qui travaille essentiellement à distance mais qui possède un bureau dans le 13ème arrondissement.
+                                                Pour ma part je suis intervenu sur la partie développement de l’entreprise puisque c’était le but du stage.
+                                            </p>
+                                            <ul>
+                                                <li>Nom : Bsecure</li>
+                                                <li>Adresse: 61 avenue secretan 75019 </li>
+                                                <li>Forme juridique:SARL </li>
+                                                <li>Effectif: 20 salariés</li>
+                                                <li>Taille: PME</li>
+                                                <li>RGPD : En terme de RGPD BSECURE se doit d'etre très vigilant envers ses clients et les données qu'elle traite.
+                                                    Le responsable se soucie du respect de la RGPD.</li>
+                                                <li>secteur d'activité: conseil en systèmes et logiciels informatiques</li>
+                                                <li>service d'intervention: MSSP Accor(Managed Security Service Provider)</li>
+
+                                            </ul>
+                                        </div>
+                                        <h3 class="resume-title">Presentation du projet</h3>
+                                        <p class="text-black"> L’entreprise gère la sécurité des réseaux de la chaine d’hôtel Accor et en particulier la mise en place et la maintenance de Firewall pour contrôler l’entrée et sortie du réseau. Suite aux problèmes de fraudes de carte bleu au sein de leurs hôtels, Accor s’est vu obligé de sécuriser ses réseaux par des pares-feux. Ma mission était donc de créer un firewall avec les différentes options nécessaires.
+                                            La création du Firewall se fait grâce à une fonction Lambda (sur AWS), celle-ci échange avec la SMC (API) qui permet de gérer les Firewall.
+                                            Pour cela je devais me connecter à un serveur de rebond qui me permettait de consulter la SMC grâce à l’outil ForcePoint.
+
+                                        <div class="text-black">
+                                            <ul>
+                                                <li>Première mission:</li>
+                                                <p class="text-black">Il fallait créer un nouveau firewall (composé uniquement d'un node : singleNode)
+                                                    Pour cela il fallait s’aider de la documentation de l’API SMC pour trouver les différentes méthodes disponibles pour les objets utilisés. Pour créer un Layer3 (type de firewall) composé d’un seul Node il fallait effectuer le code suivant :
+                                                </p>
+                                                <img src="assets/img/code1.png" alt="">
+                                                <p class="text-black">Je verifie que mon firewall s'est bien créé en regardant sur l'interface de la SMC:</p>
+                                                <img src="assets/img/result1.png">
+                                                <li>Deuxième mission</li>
+                                                <p class="text-black">
+                                                    Pour créer un firewall-cluster composé de plusieurs nodes il fallait utiliser l’objet FirewallCluster avec la méthode create qui est composé de plusieurs options :
+                                                    <img src="assets/img/code2.png" class="img-fluid" >
+                                                    Ce firewall est composé de 3 nodes et d’une interface
+                                                    Je vérifie sur l’interface de forcePoint qui affiche tous les firewalls présents au sein de la SMC :
+                                                    <img src="assets/img/result2.png">
+                                                </p>
+                                                <li>Troisième mission</li>
+                                                <p class="text-black">Ajouter des Vlans(réseau virtuel) à une interface déjà existante sur un firewall
+                                                    Les vlans sont des éléments que contient une interface (c’est comme des sous-interfaces). Il fallait donc configurer et ajouter des vlans à une interface d’un firewall toujours à l’aide de la fonction lambda.Il fallait donc rechercher la methode à utiliser dans la doc :
+                                                </p>
+                                                <img src="assets/img/code3.png">
+
+                                            </ul>
+                                        </div>
+                                        <h3 class="resum-title">Conclusion sur le stage</h3>
+                                        <p class="text-black"> Ce stage m'a permis de decouvrir beaucoup de nouveaux outils et de nouvelles technologies comme AWS,Rapid7.
+                                            J'ai pu apprendre à travailler avec une API et à recupérer des données de celle-ci.De plus j'ai pu decouvrir le language JS orienté coté serveur (nodeJS).
+                                            Au sein d'AWS j'ai pu découvrir differents services notamment les fonctions Lambda sur lequel je travaillais.
+                                            Enfin,j'ai egalement pu travailler en groupe (avec un collaborateur).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- ======= Footer ======= -->
+                            <div id="footer" class="text-center">
+                                <div class="container">
+                                    <div class="socials-media text-center">
+
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <p>&copy; Copyrights Folio. All rights reserved.</p>
+
+                                    <div class="credits">
+                                        <!--
+                                        All the links in the footer should remain intact.
+                                        You can delete the links only if you purchased the pro version.
+                                        Licensing information: https://bootstrapmade.com/license/
+                                        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
+                                      -->
+                                        Designé par <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                                    </div>
+
+                                </div>
+                            </div><!-- End Footer -->
+
+                            <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+                            <!-- Vendor JS Files -->
+                            <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                            <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+                            <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+                            <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+                            <script src="assets/vendor/typed.js/typed.min.js"></script>
+                            <script src="assets/vendor/php-email-form/validate.js"></script>
+
+                            <!-- Template Main JS File -->
+                            <script src="assets/js/main.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>

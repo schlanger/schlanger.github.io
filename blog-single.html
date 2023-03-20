@@ -100,15 +100,15 @@
                       <ul>
                         <li>Première mission:</li>
                         <p class="text-black">cibler les noms de domaines exploités par bsecure à travers l’API :
-                          nous avons commencé à travailler avec l’API que l’entreprise utilise afin de récupérer les données de l’API dans notre fonction Lambda.
-                          En entrant les données (headers, path, content-type) dans la variable options on parcourt les données que renvoie l’API et on envoie uniquement les noms de domaines des targets. (Par le path targets)
+                          J'ai commencé à travailler avec l’API que l’entreprise utilise afin de récupérer les données de l’API dans la fonction Lambda.
+                          En entrant les données (headers, path, content-type) dans la variable options je parcours les données que renvoie l’API et je renvoie uniquement les noms de domaines des targets. (Par le path targets)
                         </p>
                         <img src="assets/img/fonction.png" alt="">
                         <li>Deuxième mission</li>
                         <p class="text-black">
                           lister les scan-config en fonction de leur nom (Discovery ou full) :
                           Discovery signifie que le scan est en découverte car le robot cherche les vulnérabilités présentes.
-                          Full signifie que le scan est fonctionnel et qu’il a détecté des attaques potentiels (attack-templates).
+                          Full signifie que le scan est fonctionnel et qu’il a détecté des attaques potentielles (attack-templates).
                           La première fonction renvoie les app_id dans deux tableaux (Discovery et full).
                           La seconde renvoie les noms de ces derniers qu’elle va chercher dans les apps. (Le path)
                           Il suffit de changer le chemin et d’aller chercher uniquement les noms de domaine dans le tableau des données de l’API.

@@ -1056,6 +1056,130 @@ p {
   text-transform: capitalize;
 }
 
+.resume {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+}
+
+/* Titres de section */
+.resume-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.resume-title::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #b8a07e;
+  bottom: 0;
+  left: 0;
+}
+
+/* Style des items de la liste */
+.resume-item {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.resume-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resume-item ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.resume-item ul li::before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  color: #b8a07e;
+  font-size: 18px;
+  top: 0;
+}
+
+.resume-item h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.resume-item p {
+  font-size: 15px;
+  color: #7f8c8d;
+}
+
+/* Espacement et responsive design */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.col-lg-6 {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Style des images dans la section Expériences professionnelles */
+.resume-item img {
+  width: 80px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Style pour les certifications */
+.resume-item a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.resume-item a:hover {
+  text-decoration: underline;
+}
+
+/* Centrer les titres sur petits écrans */
+@media (max-width: 768px) {
+  .resume-title {
+    text-align: center;
+  }
+
+  .resume-item {
+    padding-left: 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .resume-item ul li {
+    font-size: 14px;
+  }
+}
+
 .entry-comments span a {
   font-size: 13px;
   color: #999;
